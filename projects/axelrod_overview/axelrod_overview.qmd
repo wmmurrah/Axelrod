@@ -1,0 +1,24 @@
+---
+title: "Axelrod Pacakge Overview"
+format: html
+---
+
+```{python}
+import axelrod as axl
+len(axl.strategies)
+
+```
+```{python}
+
+players = (axl.Alternator(), axl.TitForTat())
+
+match = axl.Match(players, 5)
+
+interactions = match.play()
+
+interactions
+
+resuls = tournament
+plot = axl.Plot(interactions)
+```
+
